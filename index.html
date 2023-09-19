@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOo Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="header">
+    <a href="#home" class="logo">
+        <img src="/assets/img/logo2.jpg" alt="logo-mooevents">
+    </a>
+    <nav class="navbar">
+        <a href="#home">Accueil</a>
+        <a href="#main-prestation">Prestation</a>
+        <a href="#main-tarif">Tarifs</a>
+        <a href="#main-reservation">Reservation</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+</header>
+<section class="home" id="home">
+    <div class="content">
+        <h3>MOo Events</h3>
+        <p>Immortaliser vos moments en 360° !</p>
+    </div>
+</section>
+<main>
+    <div class="main-container">
+        <h4>Nous louons nos photobooth </h4>
+        <p>Mariage, anniversaire,baby-shower, fêtes,etc..</p>
+    </div>
+    <div class="main-prestation" id="main-prestation">
+        <div class="main-prestation-part1">
+            <video src="/assets/img/video-photobooth.mp4" loop autoplay muted></video>
+        </div>
+    </div>
+    <div class="main-container-part2">
+        <p>Le déplacement dans Bruxelles</p>
+        <p>Personnalisation du template</p>
+        <p>L'éclairage led</p>
+        <p>L'envoie instantané des vidéos</p>
+        <p>L'accès a des accessoires</p>
+        <p>*Supplément en dehors de Bruxelles en fonction de la localisation</p>
+    </div>
+    <div class="title">
+        <h1>Nos Tarifs</h1>
+    </div>
+    <div class="main-tarif" id="main-tarif">
+        <div class="card-tarif">
+            <img src="assets/img/img-tarif.jpg" alt="img-tarif">
+            <h3>Module 1</h3>
+            <p>Location : 2h</p>
+            <h6>200 €</h6>
+            <button><a href="#main-reservation">Réserver</a></button>
+        </div>
+
+        <div class="card-tarif">
+            <img src="assets/img/img-tarif.jpg" alt="img-tarif">
+            <h3>Module 2</h3>
+            <p>Location : 4h</p>
+            <h6>350 €</h6>
+            <button><a href="#main-reservation">Réserver</a></button>
+        </div>
+
+        <div class="card-tarif">
+            <img src="assets/img/img-tarif.jpg" alt="img-tarif">
+            <h3>Module 3</h3>
+            <p>Location : 6h</p>
+            <h6>500 €</h6>
+            <button><a href="#main-reservation">Réserver</a></button>
+        </div>
+
+        <div class="card-tarif">
+            <img src="assets/img/img-tarif.jpg" alt="img-tarif">
+            <h3>Module 4</h3>
+            <p>Location : 9h</p>
+            <h6>900 €</h6>
+            <button><a href="#main-reservation">Réserver</a></button>
+        </div>
+
+    </div>
+    <div class="main-reservation" id="main-reservation">
+        <div class="title">
+            <h1>Reservation</h1>
+        </div>
+        <div class="contact-form">
+            <form action="index.php" method="post">
+                <input type="text" id="firstname" placeholder="Votre nom" required>
+                <input type="text" id="module" placeholder="Choisissez votre module" required>
+                <input type="text" id="location" placeholder="Votre localité" required>
+                <input type="text" id="telephone" placeholder="Votre téléphone" required>
+                <textarea placeholder="Votre message" id="message" required></textarea>
+                <input type="submit" value="Réserver" id="button">
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-contact">
+        <h1>Contact</h1>
+        <ul>
+            <li><i class="fa-brands fa-whatsapp"></i>0465 43 04 37</li>
+            <li><i class="fa-brands fa-instagram"></i>MOo.events</li>
+            <li><i class="fa-regular fa-envelope"></i>Moo.events@hotmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i>Belgique</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,393 @@
+/* GENERAL SETTINGS*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Quicksand:wght@300&display=swap');
+@font-face {
+    font-family: 'Quicksand';
+    src: url(assets/font/Quicksand-VariableFont_wght.ttf);
+}
+:root{
+    --main-color: #d3ad7f;
+    --black : #13131a;
+    --bg: #010103;
+}
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Quicksand',sans-serif;
+    border: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .50rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+body{
+    background: var(--bg);
+}
+section{
+    padding: 2rem 7%;
+}
+main{
+    background: whitesmoke;    
+}
+footer{
+    background: whitesmoke;
+}
+/* END GENERAL SETTINGS*/
+/*Partie header*/
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: .1rem solid rgba(255,255,255,.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 6rem;
+}
+.header .navbar a{
+    margin: 0 2.5rem;
+    font-size: 1.6rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    transition: .2s linear;
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: 5px;
+}
+.header .icons div{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icons div:hover{
+    color: var(--main-color);
+}
+#menu-btn{
+    display: none;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(assets/img/bg4.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.home .content{
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.home .content h3{
+    font-size: 8rem;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: whitesmoke;
+    text-align: center;
+}
+/*Fin partie header*/
+/*Partie main*/
+main .main-container{
+   text-align: center;
+   padding: 50px 0;
+}
+main .main-container h4{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+main .main-container p{
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+/*Partie prestation*/
+.main-prestation{
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--bg);
+}
+.main-container-part2{
+    background: var(--bg);
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    padding: 0 0 50px 0;
+}
+/*Fin partie prestation*/
+/*Partie tarif*/
+.title h1{
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 7rem;
+}
+.main-tarif .card-tarif h3{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 10px;
+}
+.main-tarif{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.card-tarif{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px var(--bg),0 10px 10px var(--bg);
+    transition: .4s;
+    background: var(--bg);
+}
+.card-tarif:hover{
+    box-shadow: 0 3px 6px var(--main-color),0 3px 6px var(--main-color);
+    transform: translate(0px,-8px);
+}
+.main-tarif .card-tarif img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.main-tarif .card-tarif p{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 1.5rem;
+}
+.main-tarif .card-tarif h3{
+    color: var(--main-color);
+    margin: 20px 0;
+}
+.main-tarif .card-tarif h6{
+    font-size: 2rem;
+    color: var(--main-color);
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+.main-tarif .card-tarif button{
+    text-align: center;
+    font-size: 1.8rem;
+    background: none;
+    border: 0;
+    outline: none;
+    margin-top: 5px;
+    width: 100%;
+    padding: 15px;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.main-tarif .card-tarif a{
+    margin: 30px;
+    color: var(--bg);
+    padding: 60px 60px;
+}
+/*Fin partie tarif*/
+/*Partie reservation*/
+.main-reservation{
+    background: var(--bg);
+}
+.main-reservation h1{
+    color: var(--main-color);
+    padding-bottom: 3px;
+}
+.contact-form{
+    min-height: 100vh;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form form{
+    width: 676px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px var(--main-color);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.contact-form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 1px solid var(--main-color);
+    color: whitesmoke;
+}
+.contact-form input::placeholder{
+    color: whitesmoke;
+}
+.contact-form #firsname,
+.contact-form #telephone{
+    margin-left: 20px;
+}
+.contact-form textarea{
+    background: none;
+    border-bottom: 1px solid var(--main-color);
+    color: whitesmoke;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+textarea::-webkit-scrollbar{
+    width: 1rem;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+.contact-form #button{
+    border: none;
+    background: var(--main-color);
+    color: var(--bg);
+    font-size: 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.contact-form #button:hover{
+    background: none;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    transform: scale(0.95);
+}
+/*Fin partie reservation*/
+/*Fin partie main*/
+/*Partie footer*/
+.footer-contact h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+.footer-contact li{
+    font-size: 1.5rem;
+    line-height: 2px;
+    margin-left: 20px;
+}
+.footer-contact i{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+/*Fin partie footer*/
+/* Partie reponsive*/
+@media screen and (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    #menu-btn{
+        display: block;
+    }
+}
+@media screen and (max-width: 1000px){
+    .card-tarif{
+        width: 45%;
+    }
+    .main-prestation-part1 video{
+        width: 100%;
+    }
+    .home{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+    .footer-contact{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 750px){
+    .card-tarif{
+        width: 100%;
+    }
+    .main-prestation-part1 video{
+        width: 100%;
+    }
+    .home{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 3rem;
+    }
+    .footer-contact{
+        font-size: 2rem;
+    }
+    .contact-form form{
+        width: 100%;
+    }
+    .contact-form input,.contact-form textarea{
+        flex-wrap: wrap;
+        width: 600%;
+    }
+    .contact-form textarea{
+        height: 50%;
+    }
+    .contact-form #button{
+        border: none;
+    }
+}
